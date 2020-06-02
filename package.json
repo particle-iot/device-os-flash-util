@@ -17,7 +17,7 @@
 	},
 	"dependencies": {
 		"@octokit/rest": "^17.1.4",
-		"binary-version-reader": "^0.8.2",
+		"binary-version-reader": "^1.0.0",
 		"chalk": "^3.0.0",
 		"decompress": "^4.2.1",
 		"download": "^8.0.0",
