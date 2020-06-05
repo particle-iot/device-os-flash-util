@@ -4,7 +4,7 @@
 	"description": "Device OS Flashing Utility",
 	"license": "Apache-2.0",
 	"main": "./lib/index.js",
-	"bin": "./bin/device-os-flash",
+	"bin": "device-os-flash",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/particle-iot/device-os-flash"
@@ -21,7 +21,6 @@
 		"chalk": "^3.0.0",
 		"decompress": "^4.2.1",
 		"download": "^8.0.0",
-		"esm": "^3.2.25",
 		"fast-glob": "^3.2.2",
 		"lodash": "^4.17.15",
 		"minimist": "^1.2.5",
