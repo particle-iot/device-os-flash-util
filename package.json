@@ -13,7 +13,7 @@
 		"node": ">=12"
 	},
 	"scripts": {
-		"start": "node -r esm ./lib/index.js"
+		"start": "node ./lib/index.js"
 	},
 	"dependencies": {
 		"@octokit/rest": "^17.1.4",
