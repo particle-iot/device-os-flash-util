@@ -59,7 +59,7 @@ device-os-flash --all-devices my_app.bin
 device-os-flash -d my_boron -d my_electon 1.5.0
 ```
 
-Resolving device names requires a valid Particle API token. If you are signed in via the Particle CLI, device-os-test will use the CLI's token. Alternatively, the token can be specified via the `PARTICLE_TOKEN` environment variable.
+Resolving device names requires a valid Particle API token. If you are signed in via the Particle CLI, device-os-flash will use the CLI's token. Alternatively, the token can be specified via the `PARTICLE_TOKEN` environment variable.
 
 **Flashing all detected devices via OpenOCD:**
 
