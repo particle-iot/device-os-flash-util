@@ -1,19 +1,21 @@
 {
-	"name": "@particle/device-os-flash",
+	"name": "@particle/device-os-flash-util",
 	"version": "0.4.2",
 	"description": "Device OS Flashing Utility",
 	"license": "Apache-2.0",
-	"main": "./lib/index.js",
-	"bin": "./lib/index.js",
+	"main": "lib/index.js",
+	"bin": {
+		"device-os-flash": "lib/index.js"
+	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/particle-iot/device-os-flash"
+		"url": "https://github.com/particle-iot/device-os-flash-util.git"
 	},
 	"engines": {
 		"node": ">=12"
 	},
 	"scripts": {
-		"start": "node ./lib/index.js"
+		"start": "node lib/index.js"
 	},
 	"dependencies": {
 		"@octokit/rest": "^17.1.4",
