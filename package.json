@@ -15,7 +15,8 @@
 		"node": ">=12"
 	},
 	"scripts": {
-		"start": "node lib/index.js"
+		"start": "node lib/index.js",
+		"test": "nyc mocha --forbid-only \"lib/**/*.test.js\""
 	},
 	"dependencies": {
 		"@octokit/rest": "^17.1.4",
@@ -36,5 +37,10 @@
 		"tmp": "^0.1.0",
 		"usb": "^1.6.2",
 		"which": "^2.0.2"
+	},
+	"devDependencies": {
+		"chai": "^4.3.4",
+		"mocha": "^9.0.3",
+		"nyc": "^15.1.0"
 	}
 }
