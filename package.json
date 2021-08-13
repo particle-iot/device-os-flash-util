@@ -16,7 +16,7 @@
 	},
 	"scripts": {
 		"start": "node lib/index.js",
-		"test": "nyc mocha --forbid-only \"lib/**/*.test.js\""
+		"test": "nyc mocha --forbid-only \"lib/**/*.test.js\" --timeout 30000"
 	},
 	"dependencies": {
 		"@octokit/rest": "^17.1.4",
