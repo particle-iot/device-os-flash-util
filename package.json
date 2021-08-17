@@ -20,7 +20,7 @@
 		"integration:test": "nyc mocha --forbid-only \"integration-tests/**/*.test.js\" --timeout 30000"
 	},
 	"dependencies": {
-		"@octokit/rest": "^17.1.4",
+		"@octokit/rest": "^18.9.1",
 		"binary-version-reader": "^1.0.0",
 		"chalk": "^3.0.0",
 		"decompress": "^4.2.1",
