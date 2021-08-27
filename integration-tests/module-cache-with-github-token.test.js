@@ -39,7 +39,7 @@ describe(`ModuleCache can download a pre-determined draft release from GitHub us
 
 		await moduleCache.init()
 
-		const someModules = await moduleCache.getReleaseModules(deviceOSVersion, { noDraft: false });
+		const someModules = await moduleCache.getReleaseModules(deviceOSVersion, { draft: true });
 		for (const element of someModules) {
 			// console.log(`Making assertions on this`, element);
 			// this file system assertion ability is from https://www.chaijs.com/plugins/chai-fs/
