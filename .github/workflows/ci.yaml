@@ -34,6 +34,7 @@ jobs:
           cache: 'npm'
           cache-dependency-path: npm-shrinkwrap.json
       - run: npm install
+      - run: npm run lint
       - run: npm test
       # TODO: Disable integration tests for now as they require a Github token
       # - run: npm run integration:test
