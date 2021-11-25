@@ -35,7 +35,8 @@ jobs:
           cache-dependency-path: npm-shrinkwrap.json
       - run: npm install
       - run: npm test
-      - run: npm run integration:test
+      # TODO: Disable integration tests for now as they require a Github token
+      # - run: npm run integration:test
   publish:
     name: Publish
     runs-on: ubuntu-latest
