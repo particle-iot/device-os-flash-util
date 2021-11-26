@@ -3,7 +3,7 @@
  *
  * 1. Get a personal github access token, with just repo public_repo access
  * 2. Authorize particle-iot SSO GH token
- * 3. Run this command: `GITHUB_TOKEN=redacted npm integration:test`
+ * 3. Run this command: `GITHUB_TOKEN=redacted npm run test:integration`
  */
 
 const chai = require('chai');

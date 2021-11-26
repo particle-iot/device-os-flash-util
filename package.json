@@ -18,8 +18,10 @@
 		"start": "node lib/index.js",
 		"lint": "eslint . --quiet -f unix",
 		"lint:fix": "npm run lint -- --fix",
-		"test": "nyc mocha --forbid-only \"lib/**/*.test.js\" --timeout 30000",
-		"integration:test": "nyc mocha --forbid-only \"integration-tests/**/*.test.js\" --timeout 30000"
+		"test": "npm run lint && npm run coverage",
+		"test:unit": "mocha --forbid-only \"lib/**/*.test.js\" --timeout 30000",
+		"test:integration": "mocha --forbid-only \"integration-tests/**/*.test.js\" --timeout 30000",
+		"coverage": "nyc npm run test:unit"
 	},
 	"dependencies": {
 		"@octokit/rest": "^18.9.1",

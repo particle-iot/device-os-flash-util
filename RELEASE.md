@@ -1,4 +1,4 @@
-# Releasing device-os-flash-util
+# Releasing Device OS Flashing Utility
 
 1. Make sure you have the latest `master` branch:
   * `git checkout master`
