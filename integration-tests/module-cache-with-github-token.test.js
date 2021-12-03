@@ -3,7 +3,7 @@
  *
  * 1. Get a personal github access token, with just repo public_repo access
  * 2. Authorize particle-iot SSO GH token
- * 3. Run this command: `GITHUB_TOKEN=redacted npm integration:test`
+ * 3. Run this command: `GITHUB_TOKEN=redacted npm run test:integration`
  */
 
 const chai = require('chai');
@@ -26,7 +26,7 @@ describe(`ModuleCache can download a pre-determined draft release from GitHub us
 
 	it('can download a mock 1.9.0-rc.1', async () => {
 		if (!process.env.GITHUB_TOKEN) {
-			throw new Error("GITHUB_TOKEN env var is not set, this integration test requires it");
+			throw new Error('GITHUB_TOKEN env var is not set, this integration test requires it');
 		}
 		const deviceOSVersion = '1.9.0-rc.1';
 		const log = new Logger();
@@ -37,7 +37,7 @@ describe(`ModuleCache can download a pre-determined draft release from GitHub us
 			log
 		});
 
-		await moduleCache.init()
+		await moduleCache.init();
 
 		const someModules = await moduleCache.getReleaseModules(deviceOSVersion, { draft: true });
 		for (const element of someModules) {
@@ -57,7 +57,7 @@ describe(`ModuleCache can download a pre-determined draft release from GitHub us
 			log
 		});
 
-		await moduleCache.init()
+		await moduleCache.init();
 
 		const someModules = await moduleCache.getReleaseModules(deviceOSVersion);
 		for (const element of someModules) {
@@ -69,7 +69,7 @@ describe(`ModuleCache can download a pre-determined draft release from GitHub us
 
 	it('will error if tried with an unknown release', async () => {
 		if (!process.env.GITHUB_TOKEN) {
-			throw new Error("GITHUB_TOKEN env var is not set, this integration test requires it");
+			throw new Error('GITHUB_TOKEN env var is not set, this integration test requires it');
 		}
 		const deviceOSVersion = '1.10.12-rc.13';
 		const log = new Logger();
@@ -80,11 +80,11 @@ describe(`ModuleCache can download a pre-determined draft release from GitHub us
 			log
 		});
 
-		await moduleCache.init()
+		await moduleCache.init();
 
 		try {
 			await moduleCache.getReleaseModules(deviceOSVersion);
-		} catch(err) {
+		} catch (err) {
 			expect(String(err)).to.equal(`Error: Release not found: ${deviceOSVersion}`);
 		}
 	});

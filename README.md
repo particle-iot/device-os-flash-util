@@ -1,3 +1,5 @@
+![Build Status](https://github.com/particle-iot/device-os-flash-util/actions/workflows/ci.yaml/badge.svg)
+
 # Device OS Flashing Utility
 
 device-os-flash is a tool that simplifies flashing of Particle devices. It can flash official Device OS releases, as well as user-provided module binaries – via DFU or a debugger.
