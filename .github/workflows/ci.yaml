@@ -17,15 +17,12 @@ jobs:
       matrix:
         node:
           - 12
+          # TODO: The currently used version of node-usb doesn't have prebuilt binaries for
+          # Node.js 14 and higher: https://github.com/particle-iot/particle-usb/pull/47
+          # - 14
+          # - 16
         optional:
           - false
-        include:
-          # TODO: particle-usb doesn't support Node.js 14 and higher:
-          # https://github.com/particle-iot/particle-usb/pull/47
-          - node: 14
-            optional: true
-          - node: 16
-            optional: true
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
