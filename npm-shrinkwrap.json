@@ -834,12 +834,11 @@
 			"dev": true
 		},
 		"binary-version-reader": {
-			"version": "1.0.0",
-			"resolved": "https://registry.npmjs.org/binary-version-reader/-/binary-version-reader-1.0.0.tgz",
-			"integrity": "sha512-lbY2OHH1iit4BLk20EhIqOR4nHxuDLgGLl217a4etr2oR/dfezXg+3UJ6pFWISFoaF0uswEVORwXg3T4K9qkCQ==",
+			"version": "1.1.2",
+			"resolved": "https://registry.npmjs.org/binary-version-reader/-/binary-version-reader-1.1.2.tgz",
+			"integrity": "sha512-C004qSxo7hUBNufccaOijzj0LCBKod32AT+cYUVGbV6fIfUq2nSlIWZMd/gnJqHKEEuo2dgFTayPwp6kRWt4ag==",
 			"requires": {
 				"buffer-crc32": "^0.2.5",
-				"h5.buffers": "^0.1.1",
 				"when": "^3.7.3",
 				"xtend": "^4.0.2"
 			}
@@ -2122,11 +2121,6 @@
 			"resolved": "https://registry.npmjs.org/growl/-/growl-1.10.5.tgz",
 			"integrity": "sha512-qBr4OuELkhPenW6goKVXiv47US3clb3/IbuWF9KNKEijAy9oeHxU9IgzjvJhHkUzhaj7rOUD7+YGWqUjLp5oSA==",
 			"dev": true
-		},
-		"h5.buffers": {
-			"version": "0.1.1",
-			"resolved": "https://registry.npmjs.org/h5.buffers/-/h5.buffers-0.1.1.tgz",
-			"integrity": "sha1-JEh3MFMOSwDkm1rxcEldrPpAEb4="
 		},
 		"has-flag": {
 			"version": "4.0.0",
