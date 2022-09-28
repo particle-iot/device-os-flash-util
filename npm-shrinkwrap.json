@@ -588,9 +588,9 @@
 			}
 		},
 		"@particle/device-constants": {
-			"version": "2.0.0",
-			"resolved": "https://registry.npmjs.org/@particle/device-constants/-/device-constants-2.0.0.tgz",
-			"integrity": "sha512-GGcebFK/A7trvUnXhyq3sWq6XvX/GSO6AJsjFFiDm9Qs+UtgmlVuPdLW6xaZR7gZgMT+siBhnxvZg+iDTEfTsg=="
+			"version": "3.0.1",
+			"resolved": "https://registry.npmjs.org/@particle/device-constants/-/device-constants-3.0.1.tgz",
+			"integrity": "sha512-xskCcfBu+vh5eTebGE9LEejaKkdDueyea/nfFPCGLL7FJG51dDPZ1DfPZsueQuok4ok/V52KhZiOWH2oxkwq2Q=="
 		},
 		"@protobufjs/aspromise": {
 			"version": "1.1.2",
