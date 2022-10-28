@@ -35,10 +35,10 @@ The examples below cover most of the use case scenarios. For the full list of av
 device-os-flash -h
 ```
 
-**Flashing all detected devices with Device OS 1.5.0 via DFU:**
+**Flashing all detected devices with Device OS 2.3.0 via DFU:**
 
 ```sh
-device-os-flash --all-devices 1.5.0
+device-os-flash --all-devices 2.3.0
 ```
 
 device-os-flash automatically downloads release binaries from GitHub. If you are experiencing rate limiting errors, set your GitHub [access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) via the `GITHUB_TOKEN` environment variable.
@@ -46,7 +46,7 @@ device-os-flash automatically downloads release binaries from GitHub. If you are
 **Same as above, but do not flash [Tinker](https://github.com/particle-iot/device-os/tree/develop/user/applications/tinker):**
 
 ```sh
-device-os-flash --all-devices --no-user 1.5.0
+device-os-flash --all-devices --no-user 2.3.0
 ```
 
 **Flashing a user application to all detected devices:**
@@ -58,7 +58,7 @@ device-os-flash --all-devices my_app.bin
 **Flashing specific devices:**
 
 ```sh
-device-os-flash -d my_boron -d my_electon 1.5.0
+device-os-flash -d my_boron -d my_electon 2.3.0
 ```
 
 Resolving device names requires a valid Particle API token. If you are signed in via the Particle CLI, device-os-flash will use the token from the CLI's configuration file. Alternatively, the token can be specified via the `PARTICLE_TOKEN` environment variable.
@@ -66,5 +66,5 @@ Resolving device names requires a valid Particle API token. If you are signed in
 **Flashing all detected devices via OpenOCD:**
 
 ```sh
-device-os-flash --all-devices --openocd 1.5.0
+device-os-flash --all-devices --openocd 2.3.0
 ```
