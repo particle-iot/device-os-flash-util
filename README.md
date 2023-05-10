@@ -4,9 +4,11 @@
 
 device-os-flash is a tool that simplifies flashing of Particle devices. It can flash official Device OS releases, as well as user-provided module binaries – via DFU or a debugger.
 
-## Current Status
+## Status
 
-**This tool is experimental. Use it at your own risk.**
+**This tool was developed for Particle internal purposes.** 
+
+It is currently functioning well for all [supported Particle devices](https://docs.particle.io/reference/product-lifecycle/product-lifecycle-policy-status/), is actively utilized within Particle and is available to be used by Particle customers. However, it is important to note that there is no long-term commitment to providing ongoing updates for this tool. As such, our [Product Lifecycle Policy](https://docs.particle.io/reference/product-lifecycle/product-lifecycle-stages/) does not apply to this particular tool.
 
 ## Installation
 
