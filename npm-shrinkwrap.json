@@ -1,12 +1,12 @@
 {
 	"name": "@particle/device-os-flash-util",
-	"version": "0.10.3",
+	"version": "0.10.4",
 	"lockfileVersion": 2,
 	"requires": true,
 	"packages": {
 		"": {
 			"name": "@particle/device-os-flash-util",
-			"version": "0.10.3",
+			"version": "0.10.4",
 			"license": "Apache-2.0",
 			"dependencies": {
 				"@octokit/rest": "^18.9.1",

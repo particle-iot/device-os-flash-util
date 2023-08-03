@@ -1,6 +1,6 @@
 {
 	"name": "@particle/device-os-flash-util",
-	"version": "0.10.3",
+	"version": "0.10.4",
 	"description": "Device OS Flashing Utility",
 	"license": "Apache-2.0",
 	"main": "lib/index.js",
