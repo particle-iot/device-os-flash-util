@@ -5,7 +5,7 @@
  * 2. Authorize particle-iot SSO GH token
  * 3. Run this command: `GITHUB_TOKEN=redacted npm run test:integration`
  */
-
+'use strict';
 const chai = require('chai');
 const expect = chai.expect;
 chai.use(require('chai-fs'));
