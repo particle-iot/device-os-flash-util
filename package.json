@@ -24,7 +24,7 @@
 	},
 	"dependencies": {
 		"@octokit/rest": "^18.9.1",
-		"@particle/device-constants": "^4.1.0",
+		"@particle/device-constants": "^4.2.1",
 		"binary-version-reader": "^3.0.2",
 		"chalk": "^5.6.2",
 		"decompress": "^4.2.1",
