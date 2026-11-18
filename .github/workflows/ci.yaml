@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
           cache: 'npm'
-          cache-dependency-path: npm-shrinkwrap.json
+          cache-dependency-path: package-lock.json
       - run: npm install
       - run: npm test
       # TODO: Disable integration tests for now as they require a Github token
@@ -42,7 +42,7 @@ jobs:
           node-version: '22'
           registry-url: 'https://registry.npmjs.org'
           cache: 'npm'
-          cache-dependency-path: npm-shrinkwrap.json
+          cache-dependency-path: package-lock.json
       - run: npm ci
       - run: npm publish
         env:
